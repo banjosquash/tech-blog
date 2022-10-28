@@ -54,7 +54,7 @@ async function signupHandler (event) {
 }
 
 // logout
-async function loqout(){
+async function logout(){
     const response = await fetch('/api/users/logout', {
         method: 'post',
         headers: {'ContentType': 'application/json'}
@@ -67,5 +67,5 @@ async function loqout(){
 }
 
 document.querySelector('.login-form').addEventListener('submit', loginHandler);
-document.querySelector('signup-form').addEventListener('submit', signupHandler);
-document.querySelector('#logout').addEventListener('click', loqout);
+document.querySelector('.signup-form').addEventListener('submit', signupHandler);
+document.querySelector('#logout').addEventListener('submit', logout);

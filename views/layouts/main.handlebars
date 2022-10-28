@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <button id="logout" class="btn-no-style" type="submit">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
@@ -32,7 +32,7 @@
   </div>
   
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
+  <script src="/javascript/login-out.js"></script>
   {{/if}}
 </body>
 
