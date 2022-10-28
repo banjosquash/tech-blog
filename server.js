@@ -3,6 +3,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exhbs = require('express-handlebars');
+const PORT = process.env.PORT || 3001;
+const app = express();
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
@@ -16,8 +18,6 @@ const sess = {
 };
 const helpers = require('./utils/helpers');
 const hbs = exhbs.create({helpers});
-const PORT = process.env.PORT || 3001;
-const app = express();
 
 app.use(session(sess));
 app.engine('handlebars', hbs.engine);
