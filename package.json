@@ -2,28 +2,25 @@
   "name": "tech-blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/banjosquash/tech-blog.git"
+    "test": "jest",
+    "seeds": "node seeds/index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/banjosquash/tech-blog/issues"
-  },
-  "homepage": "https://github.com/banjosquash/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "connect-session-sequelize": "^7.1.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
+    "connect-session-sequelize": "^6.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.25.2"
+    "express-session": "^1.17.0",
+    "handlebars": "^4.7.3",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
