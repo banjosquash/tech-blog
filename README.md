@@ -16,7 +16,8 @@ a simple blog application to make posts, comment, and like posts.
 * [Testing](#testing)
 * [Questions](#questions)
       
-## Installation: when you clone the code, open it in integrated terminal and typr 'npm i' to get the required package. once that is done type npm start  to start the server.
+## Installation: 
+when you clone the code, open it in integrated terminal and type 'npm i' to get the required package. once that is done type npm start  to start the server.
 
 ## Usage: 
 see installation^
@@ -33,4 +34,4 @@ Contact Me:
 Github: https://github.com/banjosquash
 
 Email: banjosquash@gmail.com
-# tech-bloggin
+
